@@ -1,14 +1,17 @@
 package Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.placesofbangladesh.DetailsActivity;
 import com.example.placesofbangladesh.R;
 
 import java.util.List;
@@ -74,8 +77,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
             itemView.setOnClickListener(this);
 
-            name = (TextView) itemView.findViewById(R.id.title);
-            description = (TextView) itemView.findViewById(R.id.description);
+            name = (TextView) itemView.findViewById(R.id.areaName);
+            description = (TextView) itemView.findViewById(R.id.areadescription);
 
         }
 
@@ -84,6 +87,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             int position = getAdapterPosition();
             ListItem item = listItems.get(position);
             //Will be back for intent
+
+            Intent intent = new Intent(context, DetailsActivity.class);
+
+            intent.putExtra("name", item.getName());
+            intent.putExtra("description",item.getDescription());
+
+
+            context.startActivity(intent);
+
+            Toast.makeText(context, item.getName(),Toast.LENGTH_SHORT).show();
 
         }
     }
