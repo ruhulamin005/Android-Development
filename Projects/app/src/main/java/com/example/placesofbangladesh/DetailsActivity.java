@@ -25,19 +25,27 @@ public class DetailsActivity extends AppCompatActivity {
 
         areaName = (TextView) findViewById(R.id.areaName);
         areaLocation = (TextView) findViewById(R.id.areaLocation);
+        areaImage = (ImageView) findViewById(R.id.areaImage);
 
         if(extras != null){
 
             areaName.setText(extras.getString("name"));
             areaLocation.setText(extras.getString("description"));
 
-            setUp(areaName,areaLocation);
+
+            if(extras.getString("name").equals("Sundarban")){
+
+                areaImage.setImageDrawable(getResources().getDrawable(R.drawable.sban));
+
+
+            }
+
+           // setUp(areaName,areaLocation);
 
         }
     }
 
-    private void setUp(TextView areaName, TextView areaLocation) {
 
-        //will implement for Image View
-    }
+
+
 }

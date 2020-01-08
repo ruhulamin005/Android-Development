@@ -32,19 +32,39 @@ public class MainActivity extends AppCompatActivity {
 
         listItems = new ArrayList<>();
 
-//        ListItem item1 = new ListItem("Movie1","It's About Biography","FiveStar");
-//        ListItem item2 = new ListItem("Movie2","It's About Lovoraphy","FiveStar");
+        ListItem item1 = new ListItem("Sundarban","Sathkhira, Bagerhat");
+        ListItem item2 = new ListItem("Movie1","It's About Biography");
+        ListItem item3 = new ListItem("Movie2","It's About Lovoraphy");
+        ListItem item4 = new ListItem("Movie1","It's About Biography");
+        ListItem item5 = new ListItem("Movie2","It's About Lovoraphy");
+        ListItem item6 = new ListItem("Movie1","It's About Biography");
+        ListItem item7 = new ListItem("Movie2","It's About Lovoraphy");
+        ListItem item8 = new ListItem("Movie1","It's About Biography");
+        ListItem item9 = new ListItem("Movie2","It's About Lovoraphy");
+        ListItem item10 = new ListItem("Movie1","It's About Biography");
 
-        for(int i=0; i<10;i++){
 
-            ListItem item = new ListItem(
-                    "Item"+(i+1),
-                    "Description"); // All data shoulbe be passed through Constructor
+//        for(int i=0; i<10;i++){
+//
+//            ListItem item = new ListItem(
+//                    "Item"+(i+1),
+//                    "Description"); // All data shoulbe be passed through Constructor
+//
+//            listItems.add(item);
+//        }
+        listItems.add(item1);
+        listItems.add(item2);
+        listItems.add(item3);
+        listItems.add(item4);
+        listItems.add(item5);
+        listItems.add(item6);
+        listItems.add(item7);
+        listItems.add(item8);
+        listItems.add(item9);
+        listItems.add(item10);
 
-            listItems.add(item);
-        }
-//        listItems.add(item1);
-//        listItems.add(item2);
+
+
         //adding adapter
         adapter = new MyAdapter(this, listItems);
         recyclerView.setAdapter(adapter);
