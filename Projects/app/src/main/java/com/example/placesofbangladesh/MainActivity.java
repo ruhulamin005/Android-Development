@@ -33,15 +33,15 @@ public class MainActivity extends AppCompatActivity {
         listItems = new ArrayList<>();
 
         ListItem item1 = new ListItem("Sundarban","Sathkhira, Bagerhat");
-        ListItem item2 = new ListItem("Movie1","It's About Biography");
-        ListItem item3 = new ListItem("Movie2","It's About Lovoraphy");
-        ListItem item4 = new ListItem("Movie1","It's About Biography");
-        ListItem item5 = new ListItem("Movie2","It's About Lovoraphy");
-        ListItem item6 = new ListItem("Movie1","It's About Biography");
-        ListItem item7 = new ListItem("Movie2","It's About Lovoraphy");
-        ListItem item8 = new ListItem("Movie1","It's About Biography");
-        ListItem item9 = new ListItem("Movie2","It's About Lovoraphy");
-        ListItem item10 = new ListItem("Movie1","It's About Biography");
+        ListItem item2 = new ListItem("Cox’s Bazar","Cox’s Bazar, Chittagoang");
+        ListItem item3 = new ListItem("The St. Martin’s Island","Saint Martin, Cox's Bazar");
+        ListItem item4 = new ListItem("Kuakata","Kuakata, Patuakhali");
+        ListItem item5 = new ListItem("Jaflong","Jaflong, Sylhet");
+        ListItem item6 = new ListItem("Sajek Valley","Sajek Valley, Rangamati");
+        ListItem item7 = new ListItem("The Shat Gambuj Mosque","Bagerhat,Khula");
+        ListItem item8 = new ListItem("Paharpur","Paharpur,Naogaon");
+        ListItem item9 = new ListItem("National Memorial","National Memorial, Savar");
+        ListItem item10 = new ListItem("Sonargaon","Sonargaon, Narayanganj");
 
 
 //        for(int i=0; i<10;i++){

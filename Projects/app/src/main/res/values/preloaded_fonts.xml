@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/abril_fatface</item>
+        <item>@font/amarante</item>
+        <item>@font/arapey</item>
+        <item>@font/bad_script</item>
         <item>@font/bubbler_one</item>
+        <item>@font/calligraffitti</item>
+        <item>@font/jacques_francois</item>
+        <item>@font/yrsa</item>
     </array>
 </resources>

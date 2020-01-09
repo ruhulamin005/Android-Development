@@ -10,13 +10,15 @@
     <ImageView
         android:id="@+id/areaImage"
         android:layout_width="match_parent"
-        android:layout_height="216dp"
+        android:layout_height="186dp"
+        android:background="@drawable/paperpp"
         app:srcCompat="@android:drawable/screen_background_dark_transparent" />
 
     <TextView
         android:id="@+id/areaName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="29dp"
+        android:background="@drawable/paperpp"
         android:fontFamily="@font/bubbler_one"
         android:text="Area Name"
         android:textSize="24sp"
@@ -25,41 +27,69 @@
     <TextView
         android:id="@+id/areaLocation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Location" />
+        android:layout_height="28dp"
+        android:background="@drawable/paperpp"
+        android:fontFamily="@font/jacques_francois"
+        android:text="Location"
+        android:textSize="18sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="58dp"
+        android:background="@drawable/paperpp"
         android:orientation="horizontal"
         android:paddingBottom="20dp">
 
         <ImageButton
-            android:id="@+id/callButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:id="@+id/imageButton10"
+            android:layout_width="48dp"
+            android:layout_height="43dp"
             android:layout_weight="1"
-            app:srcCompat="@android:drawable/stat_sys_phone_call" />
+            android:background="@android:drawable/menuitem_background"
+            app:srcCompat="@drawable/call" />
 
         <ImageButton
-            android:id="@+id/locationButton"
+            android:id="@+id/imageButton13"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="42dp"
             android:layout_weight="1"
-            app:srcCompat="@android:drawable/arrow_up_float" />
+            android:background="@android:drawable/menuitem_background"
+            app:srcCompat="@drawable/map" />
 
         <ImageButton
-            android:id="@+id/shareButton"
+            android:id="@+id/imageButton12"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="44dp"
             android:layout_weight="1"
-            app:srcCompat="@android:drawable/ic_menu_share" />
+            android:background="@android:drawable/menuitem_background"
+            app:srcCompat="@drawable/share" />
+
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/areadescription"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Description of area" />
+        android:layout_height="402dp"
+        android:background="@drawable/paperpp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/areadescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/calligraffitti"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="8sp"
+                android:text="Description of area"
+                android:textAlignment="gravity"
+                android:textColor="#060607"
+                android:textColorHint="#3F51B5"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

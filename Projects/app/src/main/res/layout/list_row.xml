@@ -6,22 +6,26 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:background="@drawable/paperpp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:paddingLeft="5dp"
-            android:paddingTop="14dp"
-            >
+            android:paddingTop="14dp">
 
             <TextView
                 android:id="@+id/areaName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:fontFamily="@font/abril_fatface"
+                android:text="TextView"
+                android:textColor="#29B6F6"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/areadescription"
@@ -29,7 +33,9 @@
                 android:layout_height="match_parent"
 
 
-                android:text="TextView" />
+                android:fontFamily="@font/bad_script"
+                android:text="TextView"
+                android:textColor="#EC407A" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
